@@ -1,16 +1,33 @@
+// document.querySelector("#search-input").addEventListener('input',filterList);
+
+// function filterList (){
+//     const searchInput = document.querySelector('#search-input');
+//     const filter = searchInput.ariaValueMax.toLocaleLowerCase();
+//     const listItems = document.querySelectorAll('.food-items');
+//     listItems.forEach((item) =>{
+//         let text = item.textContent;
+//         if(text.toLocaleLowerCase().includes(filter.toLocaleLowerCase())){
+//             item.style.display="";
+//         }
+//         else{
+//             item.style.display= 'none';
+//         }
+//     })
+
+// }
 document.querySelector("#search-input").addEventListener('input',filterList);
 
 function filterList (){
     const searchInput = document.querySelector('#search-input');
     const filter = searchInput.ariaValueMax.toLocaleLowerCase();
     const listItems = document.querySelectorAll('.food-items');
-    listItems.forEach((item) =>{
-        let text = item.textContent;
+    listItems.forEach((featured) =>{
+        let text = featured.textContent;
         if(text.toLocaleLowerCase().includes(filter.toLocaleLowerCase())){
-            item.style.display="";
+            featured.style.display="";
         }
         else{
-            item.style.display= 'none';
+            featured.style.display= 'none';
         }
     })
 
