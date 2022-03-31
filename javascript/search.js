@@ -15,23 +15,7 @@
 //     })
 
 // }
-document.querySelector("#search-input").addEventListener('input',filterList);
 
-function filterList (){
-    const searchInput = document.querySelector('#search-input');
-    const filter = searchInput.ariaValueMax.toLocaleLowerCase();
-    const listItems = document.querySelectorAll('.food-items');
-    listItems.forEach((featured) =>{
-        let text = featured.textContent;
-        if(text.toLocaleLowerCase().includes(filter.toLocaleLowerCase())){
-            featured.style.display="";
-        }
-        else{
-            featured.style.display= 'none';
-        }
-    })
-
-}
 
 // function myFunction() {
 //     var input, filter, ul, li, a, i, txtValue;
@@ -49,3 +33,34 @@ function filterList (){
 //         }
 //     }
 // }
+
+
+// const search = () =>{
+//     const searchbox = document.getElementById("search-input").value.toUpperCase();
+//     const storeItems = document.getElementById("food-items");
+//     const product = document.querySelectorAll(".food-item");
+//     const productName = storeItems.getElementsByClassName(".food-name");
+
+
+
+//     for(var i = 0; i < productName.length; i++){
+//         let match = product[i].getElementsByClassName(".food-name")[0];
+//         if(match){
+//           let textValue =  match.textContent || match.innerHTML;
+//           if(textValue.toUpperCase().indexOf(searchbox) > -1){
+//             storeItems [i].style.display="";
+//           } 
+//           else {
+//             storeItems [i].style.display="none"; 
+//           }
+//         }
+//     }
+// }
+
+//sort test
+
+const  products = document.getElementsByClassName('food-item');
+const productsPrice = document.getElementsByClassName('food-price');
+const heighest = document.getElementById('highest');
+
+

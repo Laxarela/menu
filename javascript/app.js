@@ -32,3 +32,25 @@ function showFoodMenu(newMenuBtn){
     });
 }
 
+
+
+// JavaScript code
+function search() {
+	let input = document.getElementById('search-input').value;
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('food-name');
+	var item = document.getElementsByClassName('food-item')
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			item[i].style.display="none";
+    
+		}
+		else {
+		item[i].style.display="grid";				
+		}
+	}
+    input.value="";
+}
+
+//sort function
+
