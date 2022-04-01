@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Sort</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Source+Sans+Pro:wght@200&display=swap" 
-rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
     <link href="./style/style2.css" rel="stylesheet">
 </head>
+
 <body>
     <section>
-        <div class="menu"> 
+        <div class="menu">
             <div class="menu-container">
                 <div class="menu-head">
                     <div class="search-bar">
-                        <input type="text" id="input-search" placeholder="Search..">  
+                        <input type="text" id="input-search" placeholder="Search..">
                     </div>
                     <h1>DELICIOUS FOOD </h1>
-                   <div class="filter-condition">
-                       <span>Select by</span>
-                       <select name="" id="">
-                           <option value="default">Default</option>
-                           <option value="Highest"> Highest</option>
-                           <option value="lowest">Lowest</option>
-                       </select>
-                   </div>
+                    <div class="filter-condition">
+                        <span>Select by</span>
+                        <select name="" id="">
+                            <option value="default">Default</option>
+                            <option value="Highest"> Highest</option>
+                            <option value="lowest">Lowest</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="menu-btn">
-                    <button type="button active">Mexican </button>
-                    <button type="button">Italian </button>
-                    <button type="button">Asian </button>
-                    <button type="button">Drinks </button>
+                    <button type="button" class="menu-btn active" id="breakfeast">Breakfeast</button>
+                    <button type="button" class="menu-btn" id="lunch">Lunch</button>
+                    <button type="button" class="menu-btn" id="dinner">Dinner </button>
+                    <button type="button" class="drinks" id="drinks">Drinks </button>
                 </div>
-
+                <div class="food-items" id="food-items">
+                    <!--item-->
+                    <div class="food-item breakfast">
+                        <div class="food-img">
+                            <img src="./photos2/full-english.jpg">
+                        </div>
+                        <div class="food-content">
+                            <h2>Full british breakfeast</h2>
+                            <div class="line"></div>
+                            <h3 class="food-price">8$</h3>
+                            <p class = "category">Categories: <span>Breakfeast</span></p>
+                        </div>
+                    </div>
+                    <!--end of item-->
+                      <!--item-->
+                      <div class="food-item breakfast">
+                        <div class="food-img">
+                            <img src="./photos2/penepasta.jpg">
+                        </div>
+                        <div class="food-content">
+                            <h2>Pene pasta</h2>
+                            <div class="line"></div>
+                            <h3 class="food-price">13$</h3>
+                            <p class = "category">Categories: <span>Lunch</span></p>
+                        </div>
+                    </div>
+                    <!--end of item-->
+                        <!--item-->
+                        <div class="food-item lunch">
+                            <div class="food-img">
+                                <img src="./photos2/penepasta.jpg">
+                            </div>
+                            <div class="food-content">
+                                <h2>Pene pasta</h2>
+                                <div class="line"></div>
+                                <h3 class="food-price">13$</h3>
+                                <p class = "category">Categories: <span>Lunch</span></p>
+                            </div>
+                        </div>
+                        <!--end of item-->
+                                <!--item-->
+                                <div class="food-item dinner">
+                                    <div class="food-img">
+                                        <img src="./photos2/penepasta.jpg">
+                                    </div>
+                                    <div class="food-content">
+                                        <h2> Vegetarian fired rice</h2>
+                                        <div class="line"></div>
+                                        <h3 class="food-price">20$</h3>
+                                        <p class = "category">Categories: <span>Dinner</span></p>
+                                    </div>
+                                </div>
+                                <!--end of item-->
+                </div>
             </div>
         </div>
     </section>
 
 
     <script src="./javascript/app2.js"></script>
-    
+
 </body>
+
 </html>
